@@ -1,0 +1,11 @@
+<div class="header">
+  <div routerLinkActive="active" class="headerContent">
+    <span routerLink="home" class="logo">Preferral</span>
+    <span *ngIf="isAuth" routerLink="home">Home</span>
+    <span *ngIf="isAuth" routerLink="setting">Setting</span>
+    <div *ngIf="isAuth" (click)="onSignOut()"  routerLink="Auth/signin" class="logout">
+      <img src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
+    </div>
+  </div>
+</div>
+        

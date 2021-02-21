@@ -1,18 +1,64 @@
+
+import { AuthGuardService } from './services/auth-guard.service';
+
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SigninComponent } from './Auth/signin/signin.component';
+import { SignupComponent } from './Auth/signup/signup.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { SettingComponent } from './setting/setting.component';
+import { ProfileComponent } from './home/profile/profile.component';
+import { SkillListComponent } from './home/skill-list/skill-list.component';
+import { SingleSkillComponent } from './home/single-skill/single-skill.component';
+import { ExperienceListComponent } from './home/experience-list/experience-list.component';
+import { SingleExperienceComponent } from './home/single-experience/single-experience.component';
+import { ExperienceActionListComponent } from './home/experience-action-list/experience-action-list.component';
+import { SingleExperienceActionComponent } from './home/single-experience-action/single-experience-action.component';
+import { HttpClientModule } from '@angular/common/http';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from './services/auth.service';
+import { HomeService } from './services/home.service';
+import { SettingService } from './services/setting.service';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SigninComponent,
+    SignupComponent,
+    HeaderComponent,
+    HomeComponent,
+    SettingComponent,
+    ProfileComponent,
+    SkillListComponent,
+    SingleSkillComponent,
+    ExperienceListComponent,
+    SingleExperienceComponent,
+    ExperienceActionListComponent,
+    SingleExperienceActionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
+  
   ],
-  providers: [],
+  providers: [
+    AuthGuardService,
+    AuthService,
+    HomeService,
+    SettingService
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

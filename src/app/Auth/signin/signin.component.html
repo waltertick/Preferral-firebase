@@ -1,0 +1,49 @@
+
+<div class="container">
+
+<section class="wrap">
+  <img class="resizeImg" src="../assets/Images/camera.png" alt="">
+  <div  class="rightSide">
+    
+    <div class="bigSpacer"></div>
+    <h1>Sign In</h1>
+    <p class="error"> {{errorMessage}} </p>
+    <div class="bigSpacer"></div>
+      <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+        <div class="field">
+          <input type="email" formControlName="email" name="email" id="email"
+           placeholder="email@email.com"
+            >
+          <label for="email"><img src="../assets/Images/userIcon.svg" alt="usericon">USERNAME</label>
+        </div>
+        <div class="smallSpacer"></div>
+        <div class="field">
+          <input type="password" formControlName="password"
+           name="password" id="password" placeholder="password" 
+            >
+          <label for="password">
+            <div class="labelClass">
+              <div class="passwordandIcon"> <img src="../assets/Images/password.svg" alt="usericon">password</div><img
+                class="imgClass" src="../assets/Images/eyePassword.svg" alt="usericon">
+            </div>
+          </label>
+        </div>
+        <div class="bigSpacer"></div>
+        
+          <button type="submit" [disabled]="signInForm.invalid" class="loginButton">
+            login
+          </button>
+          </form>
+    
+      <div class="smallSpacer"></div>
+      <div class="centerContainer">
+      <div class="signupLink">
+        <span>Not registered yet?<a routerLink="/Auth/signup" class="changeColor">signup</a></span>
+      </div>
+      <div class="smallSpacer"></div>
+    </div>
+   
+  </div>
+
+</section>
+</div>
