@@ -9,16 +9,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SigninComponent } from './Auth/signin/signin.component';
 import { SignupComponent } from './Auth/signup/signup.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './Shared/header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SettingComponent } from './setting/setting.component';
-import { ProfileComponent } from './home/profile/profile.component';
-import { SkillListComponent } from './home/skill-list/skill-list.component';
-import { SingleSkillComponent } from './home/single-skill/single-skill.component';
-import { ExperienceListComponent } from './home/experience-list/experience-list.component';
-import { SingleExperienceComponent } from './home/single-experience/single-experience.component';
-import { ExperienceActionListComponent } from './home/experience-action-list/experience-action-list.component';
-import { SingleExperienceActionComponent } from './home/single-experience-action/single-experience-action.component';
+import { ProfileComponent } from './Shared/profile/profile.component';
+import { SkillListComponent } from './Shared/skill-list/skill-list.component';
+import { SingleSkillComponent } from './Shared/single-skill/single-skill.component';
+import { ExperienceListComponent } from './Shared/experience-list/experience-list.component';
+import { SingleExperienceComponent } from './Shared/single-experience/single-experience.component';
+import { ExperienceActionListComponent } from './Shared/experience-action-list/experience-action-list.component';
+import { SingleExperienceActionComponent } from './Shared/single-experience-action/single-experience-action.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -50,14 +50,14 @@ import { SettingService } from './services/setting.service';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
-  
+
   ],
   providers: [
     AuthGuardService,
     AuthService,
     HomeService,
     SettingService
-    
+
   ],
   bootstrap: [AppComponent]
 })

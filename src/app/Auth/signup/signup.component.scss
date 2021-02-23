@@ -4,11 +4,12 @@
 
 .error{
   display:block;
-  width: 94px;
+  width: 180px;
+  color:red;
 }
 section {
-  margin-left: 118px;
-  margin-right: 118px;
+  margin-left: 100px;
+  margin-right: 100px;
   display: flex;
 
 }
@@ -87,15 +88,16 @@ span {
 }
 
 /**
-* Add a transition to the label and input.
-* I'm not even sure that touch-action: manipulation works on
-* inputs, but hey, it's new and cool and could remove the
-* pesky delay.
+* Ajoutez une transition à l'étiquette et à l'entrée. * Je ne suis même pas sûr que l'action tactile: la manipulation fonctionne
+* entrées,
+mais bon,
+c'est nouveau et cool et pourrait supprimer le
+* retard embêtant.
 */
 label,
 input {
   transition: all 0.2s;
-  touch-action: manipulation;
+  
 
 }
 
@@ -242,7 +244,7 @@ input:focus+label {
 @media only screen and (max-width: 480px) {
 
   .header {
-    padding: 12px 0px 12px 35px;
+    padding: 12px 0px 12px  16px;
   }
 
   section {
@@ -288,7 +290,7 @@ input:focus+label {
 @media only screen and (max-width: 375px) {
 
   .header {
-    padding: 12px 0px 12px 35px;
+    padding: 12px 0px 12px 16px;
   }
 
   section {

@@ -1,4 +1,5 @@
-import { AuthService } from './../services/auth.service';
+import { AuthService } from './../../services/auth.service';
+
 import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase/app';
 import 'firebase/auth';        // for authentication
@@ -22,7 +23,7 @@ export class HeaderComponent implements OnInit {
           }else {
             this.isAuth = false;
           }
-        } 
+        }
     );
   }
 

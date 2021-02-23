@@ -30,7 +30,11 @@ h1 {
   width: 520px;
   height: 620px;
 }
+.setImage{
+  margin-right: 4px;
+  width: 16px;
 
+}
 .rightSide {
   padding-left: 118px;
 
@@ -65,26 +69,29 @@ span {
 .centerContainer {
   text-align: center;
 }
-
+/*
 .labelClass {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
+*/
 .passwordandIcon {
   width: 15px;
 }
 
 .imgClass {
-  width: 20px;
+  position: absolute;
+  top: auto;
+  right: 0;
 
 }
 
 .field {
   display: flex;
   flex-flow: column-reverse;
-  margin-bottom: 1em;
+  margin-bottom: 0.2em;
+  position:relative;
 }
 
 /**
@@ -102,7 +109,7 @@ input {
 
 input {
   background-color: #F3F5F9;
-  font-size: 1.5em;
+  font-size: 1.1em;
   border: 0;
   border-bottom: 1px solid #65B79F;
 
@@ -116,12 +123,15 @@ input:focus {
   outline: 0;
   border-bottom: 1px solid#65B79F;
 }
-
+input[type=password] {
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
 label {
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   color: #65B79F;
-  font-size: .9em;
+  font-size: 1.1em;
 }
 
 /**
@@ -137,7 +147,7 @@ input:placeholder-shown+label {
   overflow: hidden;
   text-overflow: ellipsis;
   transform-origin: left bottom;
-  transform: translate(0, 2.125rem) scale(1.5);
+  transform: translate(0, 1.625rem) scale(1.1);
 }
 
 /**

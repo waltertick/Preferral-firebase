@@ -11,6 +11,7 @@ import { AuthService } from 'src/app/services/auth.service';
 export class SigninComponent implements OnInit {
    signInForm: FormGroup;
   errorMessage: string;
+  hide:boolean = true;
 
   constructor(private formBuilder:FormBuilder,
               private authService: AuthService,
@@ -25,7 +26,9 @@ export class SigninComponent implements OnInit {
       password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/)]]
     });
 }
-
+ onChangeView() {
+      this.hide=!this.hide;
+ }
   onSubmit() {
     const email = this.signInForm.get('email').value;
     const password = this.signInForm.get('password').value;
