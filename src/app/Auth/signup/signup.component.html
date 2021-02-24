@@ -1,47 +1,48 @@
 <div class="container">
-<section class="wrap">
-  <img class="resizeImg" src="../assets/Images/camera.png" alt="">
-  <div  class="rightSide">
-    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
-    <div class="bigSpacer"></div>
-    <h1>Sign up</h1>
-    <p class="error"> {{errorMessage}} </p>
-    <div class="bigSpacer"></div>
 
+  <section class="wrap">
+    <img class="resizeImg" src="../assets/Images/camera.png" alt="">
+    <div class="rightSide">
+      
+      <div class="headerSpacer"></div>
+
+      <h1>Sign Up</h1>
+      <p class="error"> {{errorMessage}} </p>
+      <div class="bigSpacer"></div>
+      <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
         <div class="field">
-          <input type="email" formControlName="email" name="email" id="email"
-           placeholder="email@email.com"
-            >
-          <label for="email"><img src="../assets/Images/userIcon.svg" alt="usericon">username</label>
+          <input type="email" formControlName="email" name="email" id="email" placeholder="email@email.com">
+          <label for="email"><img class="setImage" src="../assets/Images/userIcon.svg" alt="usericon">username</label>
         </div>
         <div class="smallSpacer"></div>
         <div class="field">
-          <input type="password" formControlName="password"
-           name="password" id="password" placeholder="Password"
-            >
-          <label for="password">
-            <div class="labelClass">
-              <div class="passwordandIcon"> <img src="../assets/Images/password.svg" alt="usericon">password</div><img
-                class="imgClass" src="../assets/Images/eyePassword.svg" alt="usericon">
-            </div>
+          <input type="password" formControlName="password" name="Password" id="Password" placeholder="Password"
+            [type]=" hide ?'password':'text'">
+          <label for="Password">
+
+            <img class="setImage" src="../assets/Images/password.svg" alt="usericon">
+            password
+
           </label>
+          <img (click)=onChangeView() class="imgClass" src="../assets/Images/eyePassword.svg" alt="usericon">
+
         </div>
         <div class="bigSpacer"></div>
 
-          <button type="submit" [disabled]="signUpForm.invalid" class="loginButton">
-            Create account
-          </button>
+        <button type="submit" [disabled]="signUpForm.invalid" class="loginButton">
+          Create account
+        </button>
+      </form>
 
       <div class="smallSpacer"></div>
       <div class="centerContainer">
-      <div class="signupLink">
-        <span>Existing user?<a routerLink="/login" class="changeColor">log in</a></span>
+        <div class="signupLink">
+          <span>Existing user?<a routerLink="/Auth/signin" class="changeColor">log in</a></span>
+        </div>
+        <div class="smallSpacer"></div>
       </div>
-      <div class="smallSpacer"></div>
+
     </div>
-   </form>
-  </div>
 
-</section>
-
+  </section>
 </div>

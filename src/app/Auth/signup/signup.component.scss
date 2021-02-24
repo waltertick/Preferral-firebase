@@ -2,11 +2,7 @@
   background-color: #F3F5F9;
 }
 
-.error{
-  display:block;
-  width: 180px;
-  color:red;
-}
+
 section {
   margin-left: 100px;
   margin-right: 100px;
@@ -35,6 +31,12 @@ h1 {
   height: 620px;
 }
 
+.setImage {
+  margin-right: 4px;
+  width: 16px;
+
+}
+
 .rightSide {
   padding-left: 118px;
 
@@ -43,7 +45,14 @@ h1 {
 .changeColor {
   color: #65B79F;
 }
-
+.headerSpacer {
+  margin-top: 120px;
+}
+.error {
+  display: block;
+  width: 180px;
+  color: red;
+}
 
 .loginButton {
   cursor: pointer;
@@ -52,7 +61,7 @@ h1 {
   color: #fff;
   background-color: #65B79F;
   padding: 4px;
-  width: 150px;
+  width: 120px;
   display: block;
   margin: auto;
 }
@@ -66,44 +75,38 @@ span {
   text-align: center;
 }
 
-.labelClass {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
-.passwordandIcon {
-  width: 15px;
-}
 
 .imgClass {
-  width: 20px;
+  position: absolute;
+  top: auto;
+  right: 0;
 
 }
 
 .field {
   display: flex;
   flex-flow: column-reverse;
-  margin-bottom: 1em;
+  margin-bottom: 0.2em;
+  position: relative;
 }
 
 /**
-* Ajoutez une transition à l'étiquette et à l'entrée. * Je ne suis même pas sûr que l'action tactile: la manipulation fonctionne
-* entrées,
-mais bon,
-c'est nouveau et cool et pourrait supprimer le
-* retard embêtant.
+* Add a transition to the label and input.
+* I'm not even sure that touch-action: manipulation works on
+* inputs, but hey, it's new and cool and could remove the
+* pesky delay.
 */
 label,
 input {
   transition: all 0.2s;
-  
+  touch-action: manipulation;
 
 }
 
 input {
   background-color: #F3F5F9;
-  font-size: 1.5em;
+  font-size: 1.1em;
   border: 0;
   border-bottom: 1px solid #65B79F;
 
@@ -118,11 +121,13 @@ input:focus {
   border-bottom: 1px solid#65B79F;
 }
 
+
+
 label {
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   color: #65B79F;
-  font-size: .9em;
+  font-size: 1.1em;
 }
 
 /**
@@ -138,7 +143,7 @@ input:placeholder-shown+label {
   overflow: hidden;
   text-overflow: ellipsis;
   transform-origin: left bottom;
-  transform: translate(0, 2.125rem) scale(1.5);
+  transform: translate(0, 1.605rem) scale(1.1);
 }
 
 /**
@@ -244,7 +249,7 @@ input:focus+label {
 @media only screen and (max-width: 480px) {
 
   .header {
-    padding: 12px 0px 12px  16px;
+    padding: 12px 0px 12px 35px;
   }
 
   section {
@@ -290,7 +295,7 @@ input:focus+label {
 @media only screen and (max-width: 375px) {
 
   .header {
-    padding: 12px 0px 12px 16px;
+    padding: 12px 0px 12px 35px;
   }
 
   section {

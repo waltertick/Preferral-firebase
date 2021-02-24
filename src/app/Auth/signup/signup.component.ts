@@ -11,6 +11,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class SignupComponent implements OnInit {
    signUpForm: FormGroup;
   errorMessage: string;
+  hide:boolean = true;
 
   constructor(private formBuilder:FormBuilder,
               private authService: AuthService,
@@ -18,6 +19,9 @@ export class SignupComponent implements OnInit {
 
   ngOnInit() {
     this.initForm();
+  }
+  onChangeView() {
+      this.hide=!this.hide;
   }
     initForm() {
     this.signUpForm = this.formBuilder.group({
@@ -35,10 +39,10 @@ export class SignupComponent implements OnInit {
       },
       (error)  => {
         this.errorMessage = error;
-        
-        
-      } 
-    ) 
+
+
+      }
+    )
   }
 
 }
