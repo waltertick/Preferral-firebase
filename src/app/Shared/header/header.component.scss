@@ -4,8 +4,14 @@
   font-weight: bold;
   cursor:pointer;
 }
+.menu {
+  display: none;
+}
 .logout{
   cursor:pointer;
+}
+.hide-mobile {
+  display:none;
 }
 .header {
   
@@ -15,13 +21,18 @@
   height: 50px;
   position: fixed;
   top: 0;
-  right: 0;
+  
 }
-
-.headerContent {
+.show-desktop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.show-mobile {
+ padding-left: 8px;
+}
+
+.headerContent {
   padding: 12px 100px 12px 100px;
 }
 @media only screen and (max-width: 1024px) {
@@ -45,7 +56,15 @@
 @media only screen and (max-width: 375px) {
 
   .header {
-    padding: 12px 0px 12px 35px;
+    padding: 12px 0px 12px 0px;
+  }
+  .headerContent {
+    padding: 12px 10px 12px 10px;
+    display:block;
+    
+  }
+  .menu{
+    display: block;
   }
   
 }

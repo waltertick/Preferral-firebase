@@ -1,11 +1,20 @@
 <div class="header">
   <div routerLinkActive="active" class="headerContent">
-    <span routerLink="home" class="logo">Preferral</span>
-    <span *ngIf="isAuth" routerLink="home">Home</span>
-    <span *ngIf="isAuth" routerLink="setting">Setting</span>
-    <div *ngIf="isAuth" (click)="onSignOut()"  routerLink="Auth/signin" class="logout">
-      <img src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
+    
+    <div class="show-desktop hide-mobile">
+      <span routerLink="home" class="logo">Preferral</span>
+      <div class="show-mobile">
+        <img src="../assets/Images/menu.svg" alt="toggle menu" class="menu" id="menu">
+      
+      </div>
+      <span *ngIf="isAuth" routerLink="home">Home</span>
+      <span *ngIf="isAuth" routerLink="setting">Setting</span>
+      <div *ngIf="isAuth" (click)="onSignOut()" routerLink="Auth/signin" class="logout">
+        <img src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
+      </div>
     </div>
   </div>
+
+
+
 </div>
-        
