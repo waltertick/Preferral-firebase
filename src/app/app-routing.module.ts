@@ -7,12 +7,12 @@ import { SettingComponent } from './setting/setting.component';
 import { AuthGuardService } from './services/auth-guard.service';
 
 const routes: Routes = [
-  {path: 'Auth/signin', component : SigninComponent},
-  {path: 'Auth/signup', component: SignupComponent},
+  {path: 'auth/signin', component : SigninComponent},
+  {path: 'auth/signup', component: SignupComponent},
   {path: 'home', canActivate: [AuthGuardService], component: HomeComponent},
   {path: 'setting', canActivate: [AuthGuardService], component: SettingComponent },
-  {path: '',redirectTo: 'Auth/signin',pathMatch: 'full'},
-  {path: '**',redirectTo: 'Auth/signin'}
+  {path: '',redirectTo: 'auth/signin',pathMatch: 'full'},
+  {path: '**',redirectTo: 'auth/signin'}
 ];
 
 @NgModule({

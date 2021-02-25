@@ -3,18 +3,17 @@
     
     <div class="show-desktop hide-mobile">
       <span routerLink="home" class="logo">Preferral</span>
-      <div class="show-mobile">
-        <img src="../assets/Images/menu.svg" alt="toggle menu" class="menu" id="menu">
       
+      <span class="hide-desktop"  *ngIf="isAuth" routerLink="home">Home</span>
+      <span class="hide-desktop" *ngIf="isAuth" routerLink="setting">Setting</span>
+      <div  *ngIf="isAuth" (click)="onSignOut()" routerLink="Auth/signin" class="logout">
+        <img class="hide-desktop" src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
       </div>
-      <span *ngIf="isAuth" routerLink="home">Home</span>
-      <span *ngIf="isAuth" routerLink="setting">Setting</span>
-      <div *ngIf="isAuth" (click)="onSignOut()" routerLink="Auth/signin" class="logout">
-        <img src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
-      </div>
+     
     </div>
   </div>
-
-
-
+  <div *ngIf="isAuth" class="show-mobile">
+    <img src="../assets/Images/menu.svg" alt="toggle menu" class="menu" id="menu">
+  
+  </div>
 </div>

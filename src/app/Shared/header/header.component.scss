@@ -60,11 +60,14 @@
   }
   .headerContent {
     padding: 12px 10px 12px 10px;
-    display:block;
+    
     
   }
   .menu{
     display: block;
+    float:left;
   }
-  
+  .hide-desktop{
+    display:none;
+  }
 }

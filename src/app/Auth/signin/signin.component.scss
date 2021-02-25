@@ -12,6 +12,7 @@ section {
 
 h1 {
   text-align: center;
+  margin-top: 100px;
 }
 
 .wrap {
@@ -27,16 +28,19 @@ h1 {
 }
 
 .resizeImg {
-  width: 520px;
+  width: 580px;
   height: 620px;
 }
-.setImage{
+
+.setImage {
   margin-right: 4px;
   width: 16px;
 
 }
+
 .rightSide {
-  padding-left: 118px;
+  padding-left: 100px;
+
 
 }
 
@@ -44,19 +48,20 @@ h1 {
   color: #65B79F;
 }
 
-.error{
-  display:block;
+.error {
+  display: block;
   width: 180px;
-  color:red;
+  color: red;
 }
+
 .loginButton {
- cursor: pointer;
+  cursor: pointer;
   border: 1px solid #65B79F;
   box-shadow: 0px 4px 10px 1px rgba(141, 140, 140, 0.2);
   color: #fff;
   background-color: #65B79F;
   padding: 4px;
-  width: 100px;
+  width: 120px;
   display: block;
   margin: auto;
 }
@@ -69,6 +74,7 @@ span {
 .centerContainer {
   text-align: center;
 }
+
 /*
 .labelClass {
   display: flex;
@@ -82,16 +88,20 @@ span {
 
 .imgClass {
   position: absolute;
-  top: auto;
+  top: 21px;
   right: 0;
 
+}
+
+form {
+  width: 440px;
 }
 
 .field {
   display: flex;
   flex-flow: column-reverse;
   margin-bottom: 0.2em;
-  position:relative;
+  position: relative;
 }
 
 /**
@@ -106,6 +116,7 @@ input {
   touch-action: manipulation;
 
 }
+
 
 input {
   background-color: #F3F5F9;
@@ -123,10 +134,7 @@ input:focus {
   outline: 0;
   border-bottom: 1px solid#65B79F;
 }
-input[type=password] {
-  background-repeat: no-repeat;
-  background-position-x: right;
-}
+
 label {
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -142,12 +150,13 @@ label {
 */
 input:placeholder-shown+label {
   cursor: text;
-  max-width: 66.66%;
+  width: 100%;
+
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   transform-origin: left bottom;
-  transform: translate(0, 1.625rem) scale(1.1);
+  transform: translate(0, 1.45rem) scale(1.1);
 }
 
 /**
@@ -164,6 +173,7 @@ input:placeholder-shown+label {
 */
 input:focus::-webkit-input-placeholder {
   opacity: 1;
+  color: transparent;
 }
 
 /**

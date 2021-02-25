@@ -12,6 +12,7 @@ section {
 
 h1 {
   text-align: center;
+  margin-top: 100px;
 }
 
 .wrap {
@@ -27,7 +28,7 @@ h1 {
 }
 
 .resizeImg {
-  width: 520px;
+  width: 580px;
   height: 620px;
 }
 
@@ -38,16 +39,15 @@ h1 {
 }
 
 .rightSide {
-  padding-left: 118px;
+  padding-left: 100px;
+
 
 }
 
 .changeColor {
   color: #65B79F;
 }
-.headerSpacer {
-  margin-top: 120px;
-}
+
 .error {
   display: block;
   width: 180px;
@@ -75,13 +75,26 @@ span {
   text-align: center;
 }
 
-
+/*
+.labelClass {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+*/
+.passwordandIcon {
+  width: 15px;
+}
 
 .imgClass {
   position: absolute;
-  top: auto;
+  top: 21px;
   right: 0;
 
+}
+
+form {
+  width: 440px;
 }
 
 .field {
@@ -104,6 +117,7 @@ input {
 
 }
 
+
 input {
   background-color: #F3F5F9;
   font-size: 1.1em;
@@ -121,8 +135,6 @@ input:focus {
   border-bottom: 1px solid#65B79F;
 }
 
-
-
 label {
   text-transform: uppercase;
   letter-spacing: 0.03em;
@@ -138,12 +150,13 @@ label {
 */
 input:placeholder-shown+label {
   cursor: text;
-  max-width: 66.66%;
+  width: 100%;
+
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   transform-origin: left bottom;
-  transform: translate(0, 1.605rem) scale(1.1);
+  transform: translate(0, 1.45rem) scale(1.1);
 }
 
 /**
@@ -160,6 +173,7 @@ input:placeholder-shown+label {
 */
 input:focus::-webkit-input-placeholder {
   opacity: 1;
+  color: transparent;
 }
 
 /**

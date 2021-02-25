@@ -11,10 +11,10 @@
       <div class="bigSpacer"></div>
       <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
         <div class="field">
-          <input type="email" formControlName="email" name="email" id="email" placeholder="email@email.com">
+          <input type="email" formControlName="email" name="email" id="email" placeholder="email@test.com">
           <label for="email"><img class="setImage" src="../assets/Images/userIcon.svg" alt="usericon">username</label>
         </div>
-        <div class="smallSpacer"></div>
+        <div class="bigSpacer"></div>
         <div class="field">
           <input type="password" formControlName="password" name="Password" id="Password" placeholder="Password"
             [type]=" hide ?'password':'text'">
@@ -27,17 +27,18 @@
           <img (click)=onChangeView() class="imgClass" src="../assets/Images/eyePassword.svg" alt="usericon">
 
         </div>
-        <div class="bigSpacer"></div>
+      <div class="bigSpacer"></div>
+      <div class="bigSpacer"></div>
 
         <button type="submit" [disabled]="signUpForm.invalid" class="loginButton">
           Create account
         </button>
       </form>
 
-      <div class="smallSpacer"></div>
+      <div class="bigSpacer"></div>
       <div class="centerContainer">
         <div class="signupLink">
-          <span>Existing user?<a routerLink="/Auth/signin" class="changeColor">log in</a></span>
+          <span>Existing user?<a routerLink="/auth/signin" class="changeColor"> Log in</a></span>
         </div>
         <div class="smallSpacer"></div>
       </div>
