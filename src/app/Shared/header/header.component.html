@@ -4,8 +4,8 @@
     <div class="show-desktop hide-mobile">
       <span routerLink="home" class="logo">Preferral</span>
       
-      <span class="hide-desktop"  *ngIf="isAuth" routerLink="home">Home</span>
-      <span class="hide-desktop" *ngIf="isAuth" routerLink="setting">Setting</span>
+      <span class="hide-desktop showCursor"  *ngIf="isAuth" routerLink="home">Home</span>
+      <span class="hide-desktop showCursor" *ngIf="isAuth" routerLink="setting">Setting</span>
       <div  *ngIf="isAuth" (click)="onSignOut()" routerLink="auth/signin" class="logout">
         <img class="hide-desktop" src="../assets/Images/Vector_power.svg" alt="Se Déconnecter">
       </div>

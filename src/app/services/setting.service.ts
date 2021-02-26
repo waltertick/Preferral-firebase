@@ -33,6 +33,31 @@ skills: Skill[] = [];
     );
     this.skills.splice(skillIndexToRemove,1);
     this.homesService.saveSkills();
-    this.homesService.emitSkillsemitSkills();
+    this.homesService.emitSkills();
   }
+
+  uploadFile(file: File) {
+    return new Promise (
+      (resolve,reject) => {
+        const almostUniqueFileName = Date.now().toString();
+        const upload= firebase.storage().ref()
+        .child('images/' + almostUniqueFileName + file.name)
+        .put(file);
+        upload.on(firebase.storage.TaskEvent.STATE_CHANGED,
+          ()=>{
+            console.log('Chargement ...');
+          },
+            (error) => {
+              console.log('Erreur de chargement : ' + error);
+              reject();
+            },
+            ()=> {
+              resolve(upload.snapshot.downloadURL);
+
+            }
+          );
+      }
+    );
+  }
+
 }
