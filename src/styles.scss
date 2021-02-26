@@ -5,20 +5,21 @@ body {
   margin: 0px;
   color: rgb(12, 7, 2);
   font-family: 'Montserrat', sans-serif;
- 
+ background-color: #F3F5F9;
 
 }
 
 .forAllContainer{
   margin-top: 50px;
-  padding-top: 20px;
+ 
   
 }
 .container {
   display: flex;
   flex-wrap: wrap;
   margin-left: 100px;
-  background-color: #F3F5F9;
+  
+   padding-top: 20px;
 }
 .spacer {
   margin-top: 40px;
