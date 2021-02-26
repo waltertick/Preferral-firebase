@@ -25,6 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from './services/auth.service';
 import { HomeService } from './services/home.service';
 import { SettingService } from './services/setting.service';
+import { SkillFormComponent } from './Shared/skill-form/skill-form.component';
 
 
 
@@ -42,7 +43,8 @@ import { SettingService } from './services/setting.service';
     ExperienceListComponent,
     SingleExperienceComponent,
     ExperienceActionListComponent,
-    SingleExperienceActionComponent
+    SingleExperienceActionComponent,
+    SkillFormComponent
   ],
   imports: [
     BrowserModule,

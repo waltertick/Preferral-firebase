@@ -1,1 +1,4 @@
-<p>skill-list works!</p>
+
+<ul *ngFor= "let skill of skills; let i= index" (click)= "onViewSkill()">
+      <li>{{skill.title }}</li>
+</ul>

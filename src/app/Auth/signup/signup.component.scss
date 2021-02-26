@@ -22,7 +22,9 @@ h1 {
 .bigSpacer {
   margin-bottom: 70px;
 }
-
+#Password{
+  background-color:#F3F5F9;
+}
 .smallSpacer {
   margin-bottom: 30px;
 }
@@ -112,7 +114,7 @@ form {
 */
 label,
 input {
-  transition: all 0.2s;
+  transition: all 0.001s;
   touch-action: manipulation;
 
 }

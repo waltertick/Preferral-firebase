@@ -5,10 +5,28 @@ body {
   margin: 0px;
   color: rgb(12, 7, 2);
   font-family: 'Montserrat', sans-serif;
-
+ 
 
 }
-.container{
-  display:block;
-  margin:auto;
+
+.forAllContainer{
+  margin-top: 50px;
+  padding-top: 20px;
+  
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+.spacer {
+  margin-top: 40px;
+}
+.sidebar {
+  flex:20%; 
+}
+
+.main {
+  flex: 80%;
+  
 }

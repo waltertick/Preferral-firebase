@@ -9,14 +9,14 @@
       <p class="error"> {{errorMessage}} </p>
       <div class="bigSpacer"></div>
       <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
-        
+
         <div class="field">
-          <input type="email" formControlName="email" name="email" id="email" placeholder="email@email.com">
+          <input type="email" formControlName="email" name="email" id="email" placeholder="USERNAME">
           <label for="email"><img class="setImage" src="../assets/Images/userIcon.svg" alt="usericon">username</label>
         </div>
         <div class="bigSpacer"></div>
         <div class="field">
-          <input type="password" formControlName="password" name="Password" id="Password" placeholder="Password"
+          <input type="password" formControlName="password" name="Password" id="Password" placeholder="PASSWORD"
             [type]=" hide ?'password':'text'">
           <label for="Password">
 
@@ -35,12 +35,12 @@
         </button>
       </form>
       <div class="bigSpacer"></div>
-      
+
       <div class="centerContainer">
         <div class="signupLink">
           <span>Not registered yet?<a routerLink="/auth/signup" class="changeColor"> Sign up</a></span>
         </div>
-      
+
         <div class="smallSpacer"></div>
       </div>
 
