@@ -26,6 +26,7 @@ import { AuthService } from './services/auth.service';
 import { HomeService } from './services/home.service';
 import { SettingService } from './services/setting.service';
 import { SkillFormComponent } from './Shared/skill-form/skill-form.component';
+import { UserFormComponent } from './Shared/user-form/user-form.component';
 
 
 
@@ -44,7 +45,8 @@ import { SkillFormComponent } from './Shared/skill-form/skill-form.component';
     SingleExperienceComponent,
     ExperienceActionListComponent,
     SingleExperienceActionComponent,
-    SkillFormComponent
+    SkillFormComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
