@@ -1,1 +1,35 @@
-<p>user-form works!</p>
+
+  <div class="container">
+  
+    <aside class="sidebar">
+      <div class="sidebarContainer">
+        <h1>Skills </h1>
+        <div class="settingList">
+          <ul>
+            <li> <a routerLink="/setting/user">Profile</a> </li>
+            <li><a routerLink="/setting/skill">Skill</a></li>
+            <li><a routerLink="/setting/experience">Experience</a></li>
+          </ul>
+        </div>
+      </div>
+  
+    </aside>
+    <main class="main">
+      <div class="mainContainer">
+        <div class="mainclass">
+          <form>
+            <div class="classProfile">
+              <div class="uploadImage" style="background-image: url('../assets/Images/IconUser2.jpg');">
+                <input type="file" class="my_file">
+              </div>
+      
+              <div class="field">
+                <input type="email" formControlName="email" name="email" id="email" placeholder="USERNAME">
+                <label for="email"><img class="setImage" src="../assets/Images/userIcon.svg" alt="usericon">username</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
