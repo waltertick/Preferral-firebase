@@ -48,8 +48,9 @@ h1 {
 
 .error {
   display: block;
-  width: 180px;
+  width: 360px;
   color: red;
+  margin : auto;
 }
 
 .loginButton {
@@ -154,7 +155,7 @@ input:placeholder-shown+label {
   overflow: hidden;
   text-overflow: ellipsis;
   transform-origin: left bottom;
-  transform: translate(0, 1.45rem) scale(1.1);
+  transform: translate(0, 1.42rem) scale(1.1);
 }
 
 /**
@@ -274,6 +275,9 @@ input:focus+label {
     width: 100%;
 
   }
+  form{
+    width: 320px;
+  }
 
   .resizeImg {
     width: 480px;
@@ -299,7 +303,7 @@ input:focus+label {
     width: 100%;
     background-color: #fff;
     margin: 60px 10px 60px 10px;
-    padding: 0px 25px 0px 25px;
+    
   }
 
 }
@@ -316,36 +320,46 @@ input:focus+label {
     width: 100%;
   }
 
-  .wrap {
-    width: 100%;
 
-  }
 
   .resizeImg {
     width: 380px;
-    height: 430px;
+    height: 400px;
 
   }
+  
 
   input[type=email] {
-    width: auto;
+    
     background-color: #fff;
   }
 
   input[type=password] {
-    width: auto;
+    
     background-color: #fff;
   }
 
   .bigSpacer {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .rightSide {
-    width: 100%;
+    width: 325px;
     background-color: #fff;
     margin: 60px 10px 60px 10px;
-    padding: 0px 25px 0px 25px;
+    padding: 0px 15px 0px 15px;
+    
   }
+  .imgClass {
+    top:20px;
+  }
+
+  h1 {
+    margin-top: 60px;
+  }
+ form {
+   width:325px;
+   
+ }
 
 }
