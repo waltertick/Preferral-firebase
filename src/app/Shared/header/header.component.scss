@@ -39,23 +39,10 @@
 .headerContent {
   padding: 12px 100px 12px 100px;
 }
-@media only screen and (max-width: 1024px) {
-  .header {
-    padding: 12px 0px 12px 78px;
-  }
-  
-}
-  @media only screen and (max-width: 900px) {
 
-  .header {
-    padding: 12px 0px 12px 58px;
-  }
-  }
-@media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 600px) {
 
-  .header {
-    padding: 12px 0px 12px 35px;
-  }
+ 
 }
 @media only screen and (max-width: 375px) {
 
