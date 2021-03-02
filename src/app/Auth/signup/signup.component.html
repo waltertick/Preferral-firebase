@@ -24,7 +24,11 @@
             password
 
           </label>
-          <img (click)=onChangeView() class="imgClass" src="../assets/Images/eyePassword.svg" alt="usericon">
+          <div class="imgClass">
+            <i class="material-icons imgClass changeColor" matSuffix (click)="hide =!hide">
+              {{hide ? 'visibility': 'visibility_off'}}
+            </i>
+          </div>
 
         </div>
       <div class="bigSpacer"></div>

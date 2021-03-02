@@ -8,7 +8,9 @@ body {
  background-color: #F3F5F9;
 
 }
-
+*{
+  outline: 0;
+}
 .forAllContainer{
   margin-top: 50px;
  
@@ -38,3 +40,5 @@ body {
     margin-right: 0;
   }
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

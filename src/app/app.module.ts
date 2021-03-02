@@ -27,7 +27,8 @@ import { HomeService } from './services/home.service';
 import { SettingService } from './services/setting.service';
 import { SkillFormComponent } from './Shared/skill-form/skill-form.component';
 import { UserFormComponent } from './Shared/user-form/user-form.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -51,9 +52,10 @@ import { UserFormComponent } from './Shared/user-form/user-form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    FormsModule,MatInputModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
 
   ],
   providers: [
