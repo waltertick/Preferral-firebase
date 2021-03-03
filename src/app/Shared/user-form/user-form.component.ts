@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserFormComponent implements OnInit {
 
+  hide:boolean = true;
   constructor() { }
 
   ngOnInit() {
