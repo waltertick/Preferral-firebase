@@ -40,11 +40,8 @@
   padding: 12px 100px 12px 100px;
 }
 
-  @media only screen and (max-width: 600px) {
 
- 
-}
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 360px) {
 
   .header {
     padding: 12px 0px 12px 0px;
@@ -61,4 +58,25 @@
   .hide-desktop{
     display:none;
   }
+}
+
+@media only screen and (min-width: 900px) {
+   .header {
+     padding: 12px 0px 12px 0px;
+   }
+
+   .headerContent {
+     padding: 12px 45px 12px 65px;
+
+
+   }
+}
+
+@media only screen and (min-width: 1024px){
+  .headerContent {
+    padding: 12px 80px 12px 80px;
+
+
+  }
+
 }
