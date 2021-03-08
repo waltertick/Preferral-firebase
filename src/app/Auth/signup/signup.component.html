@@ -1,14 +1,16 @@
 
 
   <div class="signinClass">
-    <img class="resizeImg" src="../assets/Images/camera.png" alt="">
-    <div class="rightSide">
+    <div >
+    <img class="resizeImg hide-mobile" src="../assets/Images/camera1.png" alt="">
+    <img class="resizeImg hide-desktop" src="../assets/Images/camera.png" alt="">
+  </div>
 
-      
+    <div class="rightSide">
 
       <h1>Sign Up</h1>
       <p class="error"> {{errorMessage}} </p>
-      
+
       <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
         <div class="field">
           <input type="email" formControlName="email" name="email" id="email" placeholder=" ">
@@ -16,7 +18,7 @@
             username
           </label>
         </div>
-        
+
         <div class="field">
           <input type="password" formControlName="password" name="Password" id="Password" placeholder=" "
             [type]=" hide ?'password':'text'">
@@ -33,19 +35,19 @@
           </div>
 
         </div>
-      
+
 
         <button type="submit" [disabled]="signUpForm.invalid" class="loginButton">
           Create account
         </button>
       </form>
 
-      
+
       <div class="centerContainer">
         <div class="signupLink">
           <span>Existing user?<a routerLink="/auth/signin" class="changeColor"> Log in</a></span>
         </div>
-        
+
       </div>
 
     </div>

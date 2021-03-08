@@ -23,6 +23,10 @@ input {
   transition: all 0.001s;
 }
 
+.hide-desktop {
+    display: none;
+  }
+
 input {
   font-size: 1.1em;
   border: 0;
@@ -169,17 +173,25 @@ span {
 
 @media only screen and (min-width: 900px) {
 .resizeImg {
-  width: 400px;
-  height: 440px;
+
 }
+
+.hide-desktop {
+  display: block;
+}
+
+.hide-mobile {
+  display: none;
+}
+
 .signinClass {
   margin-left: 65px;
-  margin-right: 45px;
+  margin-right: 0px;
   display: flex;
   flex-wrap: wrap;
 }
 h1 {
-  
+
   margin-bottom: 50px;
 }
 .rightSide {
@@ -188,10 +200,10 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   background-color: #F3F5F9;
-  
+
 }
 .centerContainer {
-  
+
   margin-bottom: 50px;
   margin-top: 50px;
 }
@@ -203,9 +215,17 @@ input {
 
 @media only screen and (min-width: 1024px) {
 .resizeImg {
-  width: 420px;
-  height: 606px;
+
 }
+
+.hide-mobile {
+  display: none;
+}
+
+.hide-desktop {
+  display:block;
+}
+
 h1 {
   margin-top: 60px;
   margin-bottom: 70px;
@@ -217,7 +237,7 @@ h1 {
 }
 .signinClass {
   margin-left: 80px;
-  margin-right: 80px;
+  margin-right: 0px;
   display: flex;
   flex-wrap: wrap;
 }
